@@ -4,6 +4,7 @@ document.querySelector("button").addEventListener('click', () =>{
         .toString(16)
         .padStart(6, 0)}`;
   }
-  document.querySelector(".color").textContent = getRandomHexColor();
-  document.querySelector("body").style.backgroundColor = getRandomHexColor();
+  let color = getRandomHexColor();
+  document.querySelector(".color").textContent = color;
+  document.querySelector("body").style.backgroundColor = color;
 });
