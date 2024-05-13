@@ -8,6 +8,6 @@ formReg.addEventListener("submit", (event) => {
     if (email === "" || password === "") {
         return alert("Please fill in all the fields!");
     }
-    console.log(`Email: ${email}, Password: ${password}`);
+    console.log({Email: email, Password: password});
     form.reset();
 });
